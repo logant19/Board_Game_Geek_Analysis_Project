@@ -8,7 +8,7 @@ The goal was to explore patterns in game ratings, popularity, and mechanics, whi
 ---
 
 ## Dashboard File
-My final dashboard is in **Board_Game_Dashboard.xlsx**.
+My final dashboard is in [**Board_Game_Dashboard.xlsx**](Dashboard/Board%20Game%20Dashboard.xlsx).
 
 ---
 
@@ -28,16 +28,12 @@ The following Excel skills were utilized for analysis:
 
 Before we visualize anything, we need clean data. First I took these steps:  
 
-- Tidied up the raw data: removed extra columns, fixed data types, handled nulls.
-- Pivoted and reshaped tables
+- Tidied up the raw data: removed extra columns, fixed data types, handled nulls
+- Pivoted and reshaped tables such as the game mechanics table to improve data analysis
 - Standardized column names and formats 
 
-<details>
-<summary>  Screenshot you have:</summary>
-- Power Query applied steps (main Games query)  
-- Pivoted Mechanics table  
-</details>
-<details>
+![Power Query Transformations](Images/games_query_steps.PNG)  
+![Pivoted Table](Images/mechanics_pivoted.PNG)
 
 ---
 
@@ -46,13 +42,11 @@ Before we visualize anything, we need clean data. First I took these steps:
 Next up: building a data model that connects everything smoothly:
 
 - Built relationships between games, publishers, mechanics, etc.
-- Created data model to enable cross-table analysis  
+- Created data model to enable cross-table analysis
+- Used DAX expressions to allow cross-filtering  
 
-<details>
-<summary>  Screenshot you have:</summary>
-- Power Pivot schema view  
-- The CROSSFILTER DAX expression  
-</details>
+![Data Model in Power Pivot](Images/schema.PNG)
+![DAX Expression](Images/DAX_expression.PNG)
 
 ---
 
@@ -60,18 +54,18 @@ Next up: building a data model that connects everything smoothly:
 
 Then came the fun part- creating visualizations:
 
-- **Line chart** — number of board game releases by year  
+- **Line chart** — number of board game releases by year
+  
+![Line chart](Images/line_chart.PNG)  
 - **Scatterplot** — average rating vs. game complexity scores
-- **Bar chart 1** — Top 10 game mechanics  
-- **Bar chart 2** — Top 10 most popular games  
-
-<details>
-<summary>  Screenshots to include:</summary>
-- Line chart  
-- Scatterplot  
-- Top mechanics bar chart  
-- Top games bar chart  
-</details>
+  
+![Scatterplot](Images/scatterplot.PNG)
+- **Bar chart** — Top 10 game mechanics
+  
+![Bar chart](Images/top_games_chart.PNG)
+- **Bar chart** — Top 10 most popular games
+  
+![Bar chart](Images/top_mechanics_chart.PNG)
 
 ---
 
@@ -79,10 +73,7 @@ Then came the fun part- creating visualizations:
 
 All the pieces came together in a dashboard sheet complete with a slicer allowing end users to filter data by decade of release date.
 
-<details>
-<summary>  Screenshots to include:</summary>
-- Final dashboard view  
-</details>
+![Final Dashboard](Images/dashboard.PNG)
 
 ---
 
@@ -90,10 +81,7 @@ All the pieces came together in a dashboard sheet complete with a slicer allowin
 
 Beyond the dashboard, I made a “Game Finder” tab where you can type a game name, and it returns the game’s rating, complexity, and more using **XLOOKUP**.
 
-<details>
-<summary>  Screenshot you have:</summary>
-- Game Finder sheet with XLOOKUP in action  
-</details>
+![Game Finder page](Images/game_finder.PNG)
 
 ---
 
